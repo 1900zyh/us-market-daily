@@ -1,0 +1,15 @@
+{
+  "name": "us-market-daily",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "美股观察：行情、未来七日信号与每日异动分析",
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "start": "node server.mjs",
+    "report": "node scripts/generate-report.mjs",
+    "test": "node --test server/*.test.mjs test/*.test.mjs",
+    "check": "node --check server.mjs && node --check public/app.js",
+    "smoke": "node scripts/smoke.mjs"
+  }
+}
